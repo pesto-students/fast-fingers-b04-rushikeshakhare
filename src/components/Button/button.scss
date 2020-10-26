@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 5px;
+
+    &-icon {
+        img {
+            width: 25px;
+        }
+    }
+
+    &-text {
+        color: $appContentColor;
+    }
+}
