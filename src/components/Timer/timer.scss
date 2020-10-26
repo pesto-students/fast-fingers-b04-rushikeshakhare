@@ -1,0 +1,38 @@
+.timer {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+
+    &-svg {
+        transform: scaleX(-1);
+
+        &-circle {
+            fill: none;
+            stroke: none;
+
+            &-path-elapsed {
+                stroke-width: 7px;
+                stroke: grey;
+            }
+
+            &-path-remaining {
+                stroke-width: 7px;
+                stroke-linecap: round;
+                transform: rotate(90deg);
+                transform-origin: center;
+                transition: 20ms linear all;
+                stroke: currentColor;
+            }
+        }
+    }
+
+    &-label {
+        position: relative;
+        font-size: 12px;
+        margin: auto;
+        top: -75px;
+        color: white;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,56 @@
+@import '../../variables.scss';
+.start-screen{
+    margin:auto;
+    text-align: center;
+    margin-top:5%;
+    color:$appContentColor;
+    font-family: 'Syne Mono', monospace;
+    overflow: hidden;
+    padding: 5px;
+    &-game-logo{
+        width:150px;
+    }
+    &-game-title{
+        margin-top:10px;
+    }
+    &-game-tagline{
+        margin-top:20px;
+        .tagline-header {
+            line-height: 0.2;
+            text-align: center;
+            span{
+                display: inline-block;
+                position: relative; 
+            }
+            span:before,
+            span:after{
+                content: "";
+                position: absolute;
+                height: 5px;
+                border-top: 1px solid #ff5155;
+                top: 0;
+                width: calc(100% - 30px);
+            }
+            span:before {
+                right: 100%;
+                margin-right: 15px;
+            }
+            span:after{
+                left: 100%;
+                margin-left: 15px;
+            }
+        }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .start-screen {
+     width: 30%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .start-screen {
+     width: 80%;
+    }
+  }
