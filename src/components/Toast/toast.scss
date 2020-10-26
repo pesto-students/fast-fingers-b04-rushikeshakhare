@@ -1,0 +1,24 @@
+@import '../../variables.scss';
+
+.toast{
+    position: fixed;
+    top:20px;
+    right:20px;
+    background: $appContentColor;
+    color:white;
+    padding:10px;
+    animation-name:toastOpen ;
+    animation-duration: 300ms;
+    animation-iteration-count: initial;
+}
+
+@keyframes toastOpen{
+    0%{
+        opacity: 0;
+        transform:translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0px);
+    }
+}
