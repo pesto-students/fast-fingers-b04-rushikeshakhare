@@ -1,6 +1,6 @@
 class PlayerDataModel {
-    name = localStorage.getItem('playerName');
-    difficultyLevel = localStorage.getItem('difficultyLevel') || 1;
+    name = localStorage.getItem('playerName') || '';
+    difficultyLevel = localStorage.getItem('difficultyLevel') ? parseInt(localStorage.getItem('difficultyLevel')) : 1;
     scores = localStorage.getItem('scores') ? JSON.parse(localStorage.getItem('scores')) : [];
 
     get Name() {
