@@ -1,0 +1,91 @@
+@import '../../variables.scss';
+
+.game {
+    &-header {
+        margin-top: 10px;
+        padding: 25px;
+
+        .player-details,
+        .game-details {
+            display: flex;
+            align-items: center;
+            color: $appContentColor;
+
+            .player-name,
+            .game-level {
+                display: flex;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+
+            .game-title,
+            .game-score {
+                flex: 1;
+                text-align: right;
+                font-family: 'Syne Mono', monospace;
+            }
+
+            .game-score {
+                font-family: Arial;
+            }
+        }
+
+        .game-details {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .player-name,
+    .game-level {
+        img {
+            width: 25px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    .game-title {
+        h1 {
+            font-size: 35px;
+        }
+    }
+
+    .game-score {
+        h3 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .player-name,
+    .game-level {
+        img {
+            width: 15px;
+        }
+
+        h3 {
+            font-size: 12px;
+        }
+    }
+
+    .game-title {
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    .game-score {
+        h3 {
+            font-size: 12px;
+        }
+    }
+}
