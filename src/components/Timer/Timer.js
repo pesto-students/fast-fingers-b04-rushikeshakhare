@@ -48,23 +48,25 @@ export class Timer extends Component {
     }
   };
 
-  startTimer = () => {
-    this.timer = setInterval(() => {
-      if (this.state.timeLeft === 0 || this.state.timeLeft < 0) {
-        this.stopTimer();
-        return;
+  onIntervalElapse = () => {
+    if (this.state.timeLeft === 0 || this.state.timeLeft < 0) {
+      this.stopTimer();
+      return;
+    }
+    this.setState(
+      {
+        timePassed: this.state.timePassed + 20,
+        timeLeft: this.props.timeLimit - (this.state.timePassed + 20),
+      },
+      () => {
+        this.setCircleDasharray();
+        this.props.onTimeElapse(this.state.timePassed + 20);
       }
-      this.setState(
-        {
-          timePassed: this.state.timePassed + 20,
-          timeLeft: this.props.timeLimit - (this.state.timePassed + 20),
-        },
-        () => {
-          this.setCircleDasharray();
-          this.props.onTimeElapse(this.state.timePassed + 20);
-        }
-      );
-    }, 20);
+    );
+  };
+
+  startTimer = () => {
+    this.timer = setInterval(this.onIntervalElapse, 20);
   };
 
   render() {

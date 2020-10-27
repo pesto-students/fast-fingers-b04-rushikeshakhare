@@ -1,12 +1,16 @@
-import React from 'react';
-import './textInput.scss';
+import React from "react";
+import "./textInput.scss";
 
-export const TextInput = ({onChange,value}) => {
-    return <input type="text" 
-    className="text-input" 
-    autoFocus={true} 
-    placeholder="TYPE YOUR NAME" 
-    spellCheck={false} 
-    onChange={onChange}
-    value={value}/>
-}
+export const TextInput = ({ onChange, value, placeholder }) => {
+  return (
+    <input
+      type="text"
+      className="text-input"
+      autoFocus={true}
+      placeholder={placeholder}
+      spellCheck={false}
+      onChange={onChange}
+      value={value}
+    />
+  );
+};

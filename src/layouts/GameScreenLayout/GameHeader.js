@@ -16,7 +16,7 @@ export const GameHeader = ({ score, difficultyLevel }) => {
       <div className="player-details">
         <div className="player-name">
           <img src={ICONS.PERSON.path} alt={ICONS.PERSON.alt} />
-          <h3> PLAYER NAME : {playerDataModelInstance.Name} </h3>
+          <h3>PLAYER NAME : {playerDataModelInstance.Name}</h3>
         </div>
         <div className="game-title">
           <h1> Fast Fingers </h1>
@@ -35,7 +35,7 @@ export const GameHeader = ({ score, difficultyLevel }) => {
         </div>
         {score !== null && (
           <div className="game-score">
-            <h3> Score: {millisToMinutesAndSeconds(score)} </h3>
+            <h3>SCORE : {millisToMinutesAndSeconds(score)}</h3>
           </div>
         )}
       </div>
