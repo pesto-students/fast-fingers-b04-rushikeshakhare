@@ -1,0 +1,18 @@
+@import '../../variables.scss';
+
+.end-screen {
+    .result-interface {
+        padding: 1px;
+        text-align: center;
+        margin: auto;
+        color: white;
+
+        .game-name {
+            font-size: 55px;
+        }
+
+        .game-score {
+            font-size: 60px;
+        }
+    }
+}

@@ -1,12 +1,14 @@
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
-import { StartScreen } from "./screens";
+import { Route, HashRouter } from "react-router-dom";
+import { StartScreen, GameScreen, EndScreen } from "./screens";
 
 const RouteConfiguration = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Route exact={true} path={"/"} component={StartScreen} />
-    </BrowserRouter>
+      <Route exact={true} path={"/game"} component={GameScreen} />
+      <Route exact={true} path={"/results/:id"} component={EndScreen} />
+    </HashRouter>
   );
 };
 
