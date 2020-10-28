@@ -1,6 +1,8 @@
 import React from "react";
-import { millisToMinutesAndSeconds } from "../../utilities";
-import { playerDataModelInstance } from "../../utilities/PlayerDataModel";
+import {
+  millisToMinutesAndSeconds,
+  playerDataModelInstance,
+} from "../../utilities";
 
 export const GameScoreBoard = () => {
   const personalBest = Math.max(...playerDataModelInstance.Scores);

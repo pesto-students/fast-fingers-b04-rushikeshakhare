@@ -1,16 +1,13 @@
 import React, { Component } from "react";
-import { ICONS, DIFFICULTY_LEVELS } from "../../utilities/Constants";
+import { ICONS, DIFFICULTY_LEVELS } from "../../Constants";
 import { TextInput, Dropdown, Button } from "../../components/";
-import { showToast } from "../../utilities/ToastUtil";
-import { playerDataModelInstance } from "../../utilities/PlayerDataModel";
+import { showToast, playerDataModelInstance } from "../../utilities";
 import "./startScreen.scss";
 
 export class StartScreen extends Component {
   state = {
-    playerName: localStorage.getItem("playerName") || "",
-    difficultyLevel: localStorage.getItem("difficultyLevel")
-      ? parseInt(localStorage.getItem("difficultyLevel"))
-      : 1,
+    playerName: playerDataModelInstance.Name,
+    difficultyLevel: playerDataModelInstance.DifficultyLevel,
   };
 
   onPlayerNameChange = (event) => {
@@ -70,6 +67,7 @@ export class StartScreen extends Component {
         <TextInput
           value={this.state.playerName}
           onChange={this.onPlayerNameChange}
+          placeholder="TYPE YOUR NAME"
         />
         <Dropdown
           options={DIFFICULTY_LEVELS}

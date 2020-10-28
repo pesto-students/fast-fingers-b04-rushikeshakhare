@@ -1,9 +1,11 @@
 import React from "react";
 import { Button } from "../../components";
 import { GameScreenLayout } from "../../layouts";
-import { ICONS } from "../../utilities/Constants";
-import { millisToMinutesAndSeconds } from "../../utilities";
-import { playerDataModelInstance } from "../../utilities/PlayerDataModel";
+import { ICONS } from "../../Constants";
+import {
+  millisToMinutesAndSeconds,
+  playerDataModelInstance,
+} from "../../utilities";
 import "./endScreen.scss";
 
 export const EndScreen = ({ history, match }) => {

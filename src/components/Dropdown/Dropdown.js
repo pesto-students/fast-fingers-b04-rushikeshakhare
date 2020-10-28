@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { ICONS } from "../../utilities/Constants";
+import { ICONS } from "../../Constants";
 import "./dropdown.scss";
 
 export const Dropdown = ({ onOptionClick, value, options }) => {

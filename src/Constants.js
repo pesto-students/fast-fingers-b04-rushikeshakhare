@@ -1,26 +1,26 @@
 export const ICONS = {
     KEYBOARD: {
-        path: require('../assets/icons/keyboard.svg'),
+        path: require('./assets/icons/keyboard.svg'),
         alt: 'Keyboard-Game-Logo'
     },
     ARROW_DROPDOWN: {
-        path: require('../assets/icons/arrow-dropdown.svg'),
+        path: require('./assets/icons/arrow-dropdown.svg'),
         alt: 'Dropdown-Arrow-Down'
     },
     PLAY: {
-        path: require('../assets/icons/play.svg'),
+        path: require('./assets/icons/play.svg'),
         alt: 'Play Icon'
     },
     PERSON: {
-        path: require('../assets/icons/person.svg'),
+        path: require('./assets/icons/person.svg'),
         alt: 'Person Icon'
     },
     GAMEPAD: {
-        path: require('../assets/icons/gamepad.svg'),
+        path: require('./assets/icons/gamepad.svg'),
         alt: 'Gamepad Icon'
     },
     RELOAD: {
-        path: require('../assets/icons/reload.svg'),
+        path: require('./assets/icons/reload.svg'),
         alt: 'Reload Icon'
     }
 

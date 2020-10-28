@@ -3,7 +3,7 @@ import { GameScoreBoard } from "./GameScoreBoard";
 import { Button } from "../../components";
 import { GameInterface } from "./GameInterface";
 import { GameScreenLayout } from "../../layouts/";
-import { playerDataModelInstance } from "../../utilities/PlayerDataModel";
+import { playerDataModelInstance } from "../../utilities";
 import dictionary from "../../data/dictionary.json";
 import "./gameScreen.scss";
 

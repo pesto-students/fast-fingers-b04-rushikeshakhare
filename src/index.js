@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import FastFingersGameApp from "./FastFingersGameApp";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <FastFingersGameApp />
   </React.StrictMode>,
   document.getElementById("root")
 );

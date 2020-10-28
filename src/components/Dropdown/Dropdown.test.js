@@ -1,6 +1,6 @@
 import * as React from "react";
 import { mount } from "enzyme";
-import { DIFFICULTY_LEVELS } from "../../utilities/Constants";
+import { DIFFICULTY_LEVELS } from "../../Constants";
 import { Dropdown } from "./Dropdown";
 
 const DropdownProps = {

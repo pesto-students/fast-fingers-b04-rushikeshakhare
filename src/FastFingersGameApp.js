@@ -1,8 +1,8 @@
 import React from "react";
 import RouteConfig from "./RouteConfiguration";
-import "./App.scss";
+import "./fastFingersGameApp.scss";
 
-function App() {
+function FastFingersGameApp() {
   return (
     <>
       <div className="app-bg" />
@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default FastFingersGameApp;

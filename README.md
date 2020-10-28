@@ -52,6 +52,11 @@ Difficulty factor for hard level: 2
 Deployed Project Link:
 https://practical-jones-17cfe1.netlify.app/
 
+Additional Implementations
+
+- Keyboard Accessibility With TAB & ENTER keys
+- Testcases with jest & enzyme
+
 ## Additional Requirement
 
 - Write Test cases for your components.
