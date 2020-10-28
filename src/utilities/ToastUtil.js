@@ -1,10 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Toast } from '../components';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Toast } from "../components";
 
 export const showToast = (toastMessage) => {
-    ReactDOM.render(<Toast message={toastMessage}/> ,document.getElementById('toast'));
+  const toastContainer = document.getElementById("toast");
+  if (toastContainer) {
+    ReactDOM.render(
+      <Toast message={toastMessage} />,
+      document.getElementById("toast")
+    );
     setTimeout(() => {
-        ReactDOM.unmountComponentAtNode(document.getElementById('toast'))
-    },2000)
-}
+      ReactDOM.unmountComponentAtNode(document.getElementById("toast"));
+    }, 2000);
+  }
+};
