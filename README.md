@@ -49,6 +49,7 @@ Difficulty factor for hard level: 2
 14. Application UI should closely match with the provided UI design mocks.
 
 **Note: Please deploy your application to Netlify(no other platforms allowed at this point) and Add your Application link to website section in About field**
+
 Deployed Project Link:
 https://practical-jones-17cfe1.netlify.app/
 
