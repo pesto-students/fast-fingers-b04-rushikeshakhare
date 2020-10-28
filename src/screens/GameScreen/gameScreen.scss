@@ -1,0 +1,91 @@
+@import '../../variables.scss';
+
+.game-scoreboard-container {
+    display: flex;
+    color: $appContentColor;
+
+    .game-scoreboard {
+        flex: 1;
+        border: 1px solid red;
+        margin: 0px 20px;
+        text-align: center;
+        height: 300px;
+
+        &-content {
+
+            margin: 10px;
+            color: white;
+            overflow-y: auto;
+            height: calc(100% - 50px);
+
+            .score {
+                margin: 10px auto;
+                width: 150px;
+
+                .score-best {
+                    font-size: 8px;
+                    color: $appContentColor;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .game-interface {
+        flex: 5;
+
+        .game-inputs {
+            text-align: center;
+            padding: 20px;
+
+            h1 {
+                font-size: 30px;
+                color: white;
+                margin-top: 25px;
+                text-align: center;
+                user-select: none;
+            }
+        }
+
+        .text-input {
+            margin-top: 27px;
+            text-align: center;
+        }
+    }
+}
+
+.cross-icon {
+    font-weight: bold;
+    font-size: 27px;
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .game-scoreboard-container {
+        flex-direction: row;
+    }
+
+    .game-inputs {
+        width: 35%;
+        margin-left: 20%;
+    }
+
+    .action-button {
+        .button {
+            margin-left: 10px;
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .game-scoreboard-container {
+        flex-direction: column-reverse;
+    }
+
+    .game-inputs {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
