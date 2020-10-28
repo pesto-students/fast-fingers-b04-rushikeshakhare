@@ -1,7 +1,9 @@
 import React from "react";
-import { ICONS, DIFFICULTY_LEVELS } from "../../utilities/Constants";
-import { millisToMinutesAndSeconds } from "../../utilities";
-import { playerDataModelInstance } from "../../utilities/PlayerDataModel";
+import { ICONS, DIFFICULTY_LEVELS } from "../../Constants";
+import {
+  millisToMinutesAndSeconds,
+  playerDataModelInstance,
+} from "../../utilities";
 
 export const GameHeader = ({ score, difficultyLevel }) => {
   const getDifficultyLabelByValue = () => {

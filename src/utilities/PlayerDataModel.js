@@ -8,6 +8,10 @@ class PlayerDataModel {
     }
 
     set Name(name) {
+        if (this.name !== name) {
+            this.scores = [];
+            localStorage.setItem('scores', JSON.stringify([]));
+        }
         this.name = name;
         localStorage.setItem('playerName', name);
     }
